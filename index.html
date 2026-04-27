@@ -366,7 +366,6 @@
     <div id="screen-quiz" class="screen">
       <div class="q-progress-bar"><div class="q-progress-fill" id="prog"></div></div>
       <div class="q-counter" id="q-counter"></div>
-      <div class="q-category" id="q-cat"></div>
       <div class="q-text" id="q-text"></div>
       <div class="scale-row" id="scale-row"></div>
       <div class="q-nav">
@@ -483,7 +482,6 @@ function renderQ() {
   const q = QUESTIONS[current];
   document.getElementById('prog').style.width = ((current + 1) / 20 * 100) + '%';
   document.getElementById('q-counter').textContent = (current + 1) + ' / 20';
-  document.getElementById('q-cat').textContent = q.cat + ' 코칭';
   document.getElementById('q-text').textContent = q.text;
   const row = document.getElementById('scale-row');
   row.innerHTML = '';
